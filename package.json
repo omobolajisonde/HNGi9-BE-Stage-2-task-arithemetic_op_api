@@ -1,0 +1,22 @@
+{
+  "name": "simple_api",
+  "version": "1.0.0",
+  "description": "A simple api",
+  "main": "app.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Sonde Omobolaji",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omobolajisonde/HNGi9-BE-Stage-1-task-simple_api.git"
+  },
+  "keywords": []
+}
