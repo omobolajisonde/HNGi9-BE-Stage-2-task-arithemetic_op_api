@@ -24,22 +24,22 @@ exports.solveArithemeticOp = (req, res, next) => {
   try {
     let { operation_type, x, y } = req.body;
     operation_type = operation_type.toLowerCase(); // converts the operation or word problem to lowercase
-    let results;
+    let result;
 
     const operations = ["addition", "subtraction", "multiplication"]; // allowed operations
     if (operations.includes(operation_type)) {
       // checks if it is an operation
       if (operation_type === operations[0]) {
-        results = x + y;
+        result = x + y;
       } else if (operation_type === operations[1]) {
-        results = x - y;
+        result = x - y;
       } else {
-        results = x * y;
+        result = x * y;
       }
       return res.status(200).json({
         slackUsername: "Omobolaji Sonde",
         operation_type,
-        results,
+        result,
       });
     } else {
       // Takes care of word problem
@@ -47,18 +47,18 @@ exports.solveArithemeticOp = (req, res, next) => {
       let arith_op_type;
       if (op_type === "plus" || op_type === "add") {
         arith_op_type = "addition";
-        results = nums.reduce((curr_num, num) => curr_num + num, 0);
+        result = nums.reduce((curr_num, num) => curr_num + num, 0);
       } else if (op_type === "minus" || op_type === "sub") {
         arith_op_type = "subtraction";
-        results = nums[0] - nums[1];
+        result = nums[0] - nums[1];
       } else if (op_type === "times" || op_type === "multi") {
         arith_op_type = "multiplication";
-        results = nums.reduce((curr_num, num) => curr_num * num, 1);
+        result = nums.reduce((curr_num, num) => curr_num * num, 1);
       }
       return res.status(200).json({
         slackUsername: "Omobolaji Sonde",
         operation_type: arith_op_type,
-        results,
+        result,
       });
     }
   } catch (error) {
