@@ -1,7 +1,7 @@
 {
-  "name": "simple_api",
+  "name": "arithemetic_op_api",
   "version": "1.0.0",
-  "description": "A simple api",
+  "description": "An arithemetic operation api",
   "main": "app.js",
   "scripts": {
     "start": "node server.js"
@@ -16,7 +16,7 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/omobolajisonde/HNGi9-BE-Stage-1-task-simple_api.git"
+    "url": "git+https://github.com/omobolajisonde/HNGi9-BE-Stage-2-task-arithemetic_op_api.git"
   },
   "keywords": []
 }
