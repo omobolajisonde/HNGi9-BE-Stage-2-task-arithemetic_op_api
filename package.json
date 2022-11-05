@@ -4,7 +4,7 @@
   "description": "An arithemetic operation api",
   "main": "app.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "nodemon server.js"
   },
   "author": "Sonde Omobolaji",
   "license": "ISC",
