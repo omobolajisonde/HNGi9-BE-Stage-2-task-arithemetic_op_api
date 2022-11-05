@@ -12,7 +12,7 @@ A simple arithemetic operations api.
 - Returns: a JSON response of a person's data.
 - Sample
 ```bash
-curl https://simple-api-hngi9.onrender.com/profile
+curl https://arithemetic-op-api.onrender.com/profile
 ```
 - Response (JSON)
 ```json
@@ -37,7 +37,7 @@ curl https://simple-api-hngi9.onrender.com/profile
 - Returns: a JSON response which includes the result of the operation and some other data.
 - Sample
 ```bash
-curl -X POST http://127.0.0.1:8000/arithmetic_op -H "Content-Type: application/json" -d '{"operation_type": "subtraction", "x": 10, "y": 6}'
+curl -X POST https://arithemetic-op-api.onrender.com/arithmetic_op -H "Content-Type: application/json" -d '{"operation_type": "subtraction", "x": 10, "y": 6}'
 ```
 - Response (JSON)
 ```json
@@ -53,4 +53,4 @@ An [HNGi9](https://internship.zuri.team/hngi9) backend task.
 Built using Express.js
 
 ## Deployment
-Link to live site: https://simple-api-hngi9.onrender.com/profile
+Link to live site: https://arithemetic-op-api.onrender.com/arithmetic_op
